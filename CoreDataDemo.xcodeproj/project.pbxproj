@@ -17,6 +17,11 @@
 		DC8D027629A4B12A001C9D4C /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D027529A4B12A001C9D4C /* CoreDataDemoTests.swift */; };
 		DC8D028029A4B12A001C9D4C /* CoreDataDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D027F29A4B12A001C9D4C /* CoreDataDemoUITests.swift */; };
 		DC8D028229A4B12A001C9D4C /* CoreDataDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D028129A4B12A001C9D4C /* CoreDataDemoUITestsLaunchTests.swift */; };
+		DC8D029729A4D220001C9D4C /* PersistantStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D029629A4D220001C9D4C /* PersistantStorage.swift */; };
+		DC8D02A029A4EA83001C9D4C /* CDEmploye+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D029E29A4EA83001C9D4C /* CDEmploye+CoreDataClass.swift */; };
+		DC8D02A129A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D029F29A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift */; };
+		DC8D02A329A4EAB4001C9D4C /* EmployeeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D02A229A4EAB4001C9D4C /* EmployeeDataRepository.swift */; };
+		DC8D02A529A4F085001C9D4C /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D02A429A4F085001C9D4C /* Employee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		DC8D027B29A4B12A001C9D4C /* CoreDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8D027F29A4B12A001C9D4C /* CoreDataDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoUITests.swift; sourceTree = "<group>"; };
 		DC8D028129A4B12A001C9D4C /* CoreDataDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC8D029629A4D220001C9D4C /* PersistantStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantStorage.swift; sourceTree = "<group>"; };
+		DC8D029E29A4EA83001C9D4C /* CDEmploye+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmploye+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		DC8D029F29A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmploye+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		DC8D02A229A4EAB4001C9D4C /* EmployeeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataRepository.swift; sourceTree = "<group>"; };
+		DC8D02A429A4F085001C9D4C /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +111,14 @@
 		DC8D025A29A4B125001C9D4C /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DC8D025B29A4B125001C9D4C /* AppDelegate.swift */,
+				DC8D029B29A4E958001C9D4C /* Managers */,
+				DC8D029D29A4E971001C9D4C /* Controllers */,
+				DC8D029C29A4E964001C9D4C /* Models */,
+				DC8D029A29A4E951001C9D4C /* Repository */,
+				DC8D029929A4E93F001C9D4C /* Constants */,
+				DC8D029829A4E92A001C9D4C /* CoreDataSupportFiles */,
 				DC8D025D29A4B125001C9D4C /* SceneDelegate.swift */,
-				DC8D025F29A4B125001C9D4C /* ViewController.swift */,
+				DC8D025B29A4B125001C9D4C /* AppDelegate.swift */,
 				DC8D026129A4B125001C9D4C /* Main.storyboard */,
 				DC8D026729A4B129001C9D4C /* Assets.xcassets */,
 				DC8D026929A4B129001C9D4C /* LaunchScreen.storyboard */,
@@ -128,6 +143,54 @@
 				DC8D028129A4B12A001C9D4C /* CoreDataDemoUITestsLaunchTests.swift */,
 			);
 			path = CoreDataDemoUITests;
+			sourceTree = "<group>";
+		};
+		DC8D029829A4E92A001C9D4C /* CoreDataSupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D029E29A4EA83001C9D4C /* CDEmploye+CoreDataClass.swift */,
+				DC8D029F29A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift */,
+				DC8D029629A4D220001C9D4C /* PersistantStorage.swift */,
+			);
+			path = CoreDataSupportFiles;
+			sourceTree = "<group>";
+		};
+		DC8D029929A4E93F001C9D4C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DC8D029A29A4E951001C9D4C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D02A229A4EAB4001C9D4C /* EmployeeDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DC8D029B29A4E958001C9D4C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DC8D029C29A4E964001C9D4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D02A429A4F085001C9D4C /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC8D029D29A4E971001C9D4C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D025F29A4B125001C9D4C /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8D02A129A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift in Sources */,
+				DC8D02A529A4F085001C9D4C /* Employee.swift in Sources */,
+				DC8D02A329A4EAB4001C9D4C /* EmployeeDataRepository.swift in Sources */,
 				DC8D026029A4B125001C9D4C /* ViewController.swift in Sources */,
 				DC8D026629A4B125001C9D4C /* CoreDataDemo.xcdatamodeld in Sources */,
+				DC8D029729A4D220001C9D4C /* PersistantStorage.swift in Sources */,
 				DC8D025C29A4B125001C9D4C /* AppDelegate.swift in Sources */,
+				DC8D02A029A4EA83001C9D4C /* CDEmploye+CoreDataClass.swift in Sources */,
 				DC8D025E29A4B125001C9D4C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
