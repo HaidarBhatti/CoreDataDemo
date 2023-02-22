@@ -22,6 +22,7 @@
 		DC8D02A129A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D029F29A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift */; };
 		DC8D02A329A4EAB4001C9D4C /* EmployeeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D02A229A4EAB4001C9D4C /* EmployeeDataRepository.swift */; };
 		DC8D02A529A4F085001C9D4C /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D02A429A4F085001C9D4C /* Employee.swift */; };
+		DCDF88AA29A6142900F27C97 /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF88A929A6142900F27C97 /* EmployeeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		DC8D029F29A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmploye+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		DC8D02A229A4EAB4001C9D4C /* EmployeeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataRepository.swift; sourceTree = "<group>"; };
 		DC8D02A429A4F085001C9D4C /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		DCDF88A929A6142900F27C97 /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		DC8D029B29A4E958001C9D4C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				DCDF88A929A6142900F27C97 /* EmployeeManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				DC8D02A129A4EA83001C9D4C /* CDEmploye+CoreDataProperties.swift in Sources */,
 				DC8D02A529A4F085001C9D4C /* Employee.swift in Sources */,
 				DC8D02A329A4EAB4001C9D4C /* EmployeeDataRepository.swift in Sources */,
+				DCDF88AA29A6142900F27C97 /* EmployeeManager.swift in Sources */,
 				DC8D026029A4B125001C9D4C /* ViewController.swift in Sources */,
 				DC8D026629A4B125001C9D4C /* CoreDataDemo.xcdatamodeld in Sources */,
 				DC8D029729A4D220001C9D4C /* PersistantStorage.swift in Sources */,
