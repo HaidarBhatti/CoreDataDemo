@@ -7,13 +7,14 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 protocol EmployeeRepository{
     func create(employee: Employee)
     func getAll() -> [Employee]?
     func get(byIdentifier id: UUID) -> Employee?
     func update(employee: Employee) -> Bool
-    func delete(record: Employee) -> Bool
+    func delete(id: UUID) -> Bool
 }
 
 struct EmployeeDataRepository: EmployeeRepository{
@@ -51,8 +52,8 @@ struct EmployeeDataRepository: EmployeeRepository{
         return true
     }
     
-    func delete(record: Employee) -> Bool {
-        let cdEmployee = getCDEmployee(byIdentifier: record.id)
+    func delete(id: UUID) -> Bool {
+        let cdEmployee = getCDEmployee(byIdentifier: id)
         guard cdEmployee != nil else { return false }
         PersistantStorage.shared.context.delete(cdEmployee!)
         return true
